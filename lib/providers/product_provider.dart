@@ -71,8 +71,8 @@ class ProductProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  deleteCart(id) {
-    cart.removeWhere((element) => element.id == id);
+  deleteCart(index) {
+    cart.removeWhere((element) => element.index == index);
     notifyListeners();
   }
 
